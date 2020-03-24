@@ -1,0 +1,27 @@
+.chessboard {
+    width: fit-content;
+    border: red solid 5px;
+}
+
+.row{
+    display: flex;
+}
+
+.row_alternate{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+#b {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-style: outset;
+}
+#w {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-style: outset;
+}

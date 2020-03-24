@@ -1,0 +1,36 @@
+/* #Flag {
+ width: 1200px;
+ border: solid black;
+}
+
+#FlagSections {
+ border-color: brown;
+ background-color: blue;
+} */
+
+
+img{
+    height: 308px;
+    width: 33%;
+    position: absolute;
+    
+}
+
+table{
+    width: 75%;
+    height: 50%;
+}
+.redStripe,
+.whiteStripe{
+    width: 100%;
+    height: 40px;
+}
+
+.redStripe{
+    background-color: red;
+
+}
+
+.whiteStripe{
+    color: white;
+}
