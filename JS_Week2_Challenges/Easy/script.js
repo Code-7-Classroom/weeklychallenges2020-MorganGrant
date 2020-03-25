@@ -3,8 +3,6 @@
 // greeting with the first name, last name and age of the 2nd student. The output should look like 
 // "Hello, my name is John Doe and I'm 19 years old."
 
-
-
 var studentOne = ['John ' , 'Doe' , 13];
 var studentTwo = ['Mark ' , 'Who' , 16];
 var studentThree = ['Mary ' , 'Sue' , 14];

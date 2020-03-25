@@ -6,34 +6,31 @@
 // Print a string to the console with the variable from step 3 ( e.g. Is Tom’s BMI higher than Jerry’s? false).
  
 
-
-
-function calcBMI ( mass,height ) {
-    return mass / (height * height)
-}
-var tomMass = 81;
+var tomMass = 8;
 var tomHeight = 9;
 
 var jerryMass = 45;
 var jerryHeight = 10;
 
+
+function calcBMI ( mass,height ) {
+    return mass / (height * height)
+}
+
 var tombmi = calcBMI ( tomMass , tomHeight);
 var jerrybmi = calcBMI ( jerryMass , jerryHeight);
 
 
-
-console.log( jerrybmi , tombmi )
-
-
 if ( jerrybmi > tombmi){
-    var greaterBmi = jerrybmi > tombmi;
-    console.log ("Is Tom’s BMI higher than Jerry’s? " + greaterBmi );
+    console.log ( `Is Tom’s BMI higher than Jerry’s? ${tombmi > jerrybmi}` );
 
 }
-if ( tombmi > jerrybmi  ) { 
-    var greaterBmi = jerrybmi > tombmi;
-    console.log ("Is Tom’s BMI higher than Jerry’s? " + greaterBmi );
+if ( tombmi > jerrybmi  ) {   
+    console.log (`Is Tom’s BMI higher than Jerry’s? ${tombmi > jerrybmi}` );
 }
+
+
+
 
 
 

@@ -3,7 +3,9 @@
 //For Example: If the user enters 3 it should return "March"
 //Bonus: alert the user if they enter an invalid number (less than 1 or greater than 12)
 
-var monthNumber = parseInt(prompt('Please enter a number in between 1-12'));
+var monthNumber = prompt('Please enter a number in between 1-12');
+
+
 
 switch(monthNumber) {
    case 1:
