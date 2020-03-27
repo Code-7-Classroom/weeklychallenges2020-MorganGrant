@@ -6,11 +6,11 @@
 // Print a string to the console with the variable from step 3 ( e.g. Is Tom’s BMI higher than Jerry’s? false).
  
 //Store Tom & Jerry’s mass and height as variables
-var tomMass = 8; 
-var tomHeight = 9;
+var tomMass = 8; //lb
+var tomHeight = 9; //in
 
-var jerryMass = 45;
-var jerryHeight = 10;
+var jerryMass = 45/454; //convert g to lb
+var jerryHeight = 10/2.45; // convert cm to in
 
 //Calculate both their BMI’s.
 function calcBMI ( mass,height ) {
