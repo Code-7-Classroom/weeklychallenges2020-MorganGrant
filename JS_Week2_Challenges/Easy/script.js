@@ -7,4 +7,4 @@ var studentOne = ['John ' , 'Doe' , 13];
 var studentTwo = ['Mark ' , 'Who' , 16];
 var studentThree = ['Mary ' , 'Sue' , 14];
 
-console.log("Hello, my name is " + studentTwo[0] + studentTwo[1] +" and I'm " + studentTwo[2] + " years old.")
+console.log(`Hello, my name is ${studentTwo[0]}${studentTwo[1]} and I'm ${studentTwo[2]} years old.`);

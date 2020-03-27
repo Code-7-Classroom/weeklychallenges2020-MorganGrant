@@ -5,29 +5,24 @@
 // their BMI’s. Create a Boolean variable containing information about whether Tom has a higher BMI than Jerry.
 // Print a string to the console with the variable from step 3 ( e.g. Is Tom’s BMI higher than Jerry’s? false).
  
-
-var tomMass = 8;
+//Store Tom & Jerry’s mass and height as variables
+var tomMass = 8; 
 var tomHeight = 9;
 
 var jerryMass = 45;
 var jerryHeight = 10;
 
-
+//Calculate both their BMI’s.
 function calcBMI ( mass,height ) {
     return mass / (height * height)
-}
+};
 
-var tombmi = calcBMI ( tomMass , tomHeight);
-var jerrybmi = calcBMI ( jerryMass , jerryHeight);
+//Create a Boolean variable containing information about whether Tom has a higher BMI than Jerry.
+var isTomBMIGreater = calcBMI ( tomMass , tomHeight) > calcBMI ( jerryMass , jerryHeight); 
 
+// Print a string to the console with the variable from step 3 ( e.g. Is Tom’s BMI higher than Jerry’s? false).
+console.log( `Is Tom's BMI higher than Jerry's? ${isTomBMIGreater}`);
 
-if ( jerrybmi > tombmi){
-    console.log ( `Is Tom’s BMI higher than Jerry’s? ${tombmi > jerrybmi}` );
-
-}
-if ( tombmi > jerrybmi  ) {   
-    console.log (`Is Tom’s BMI higher than Jerry’s? ${tombmi > jerrybmi}` );
-}
 
 
 

@@ -2,16 +2,12 @@
 // // Write a function named min that takes two arguments and returns their minimum.
 
 
-function min (number1,number2) {
+function min (number1,number2) { // Function Name: Min , Parameters: number1 & number2 
 
-    if (number1 > number2){
-        return number2
-    } else {
-        return number1
-    };
+    return(number1 > number2)? number2 : number1; // Body
 
-}
+};
 
-// // Example
-// // var min = min (567,300);
-// // console.log(min);
+
+var min = min (567,600); //Invocation , Arguments: 567 & 600
+console.log(min); //Me Making sure it works
