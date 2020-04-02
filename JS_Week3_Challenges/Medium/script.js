@@ -8,8 +8,7 @@
 function cutPizzaSlices ( slices ) {
 
     function sharePizza( people ) {
-        // var distributed = 
-        return`Each person gets ${slices/people} slices of pizza`;
+        return `Each person gets ${(slices/people).toFixed(2)} slices of pizza`;
      };
   
     console.log(sharePizza(2));
@@ -17,3 +16,4 @@ function cutPizzaSlices ( slices ) {
 };
      
 var sharePizza = cutPizzaSlices(8);
+
