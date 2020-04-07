@@ -8,3 +8,29 @@ what data and helps you prevent people who shouldn't see important info like soc
 security numbers from getting access to the data.
 You can use 'getName' or other get methods to access data that people might need. For example, 
 people addressing a package or email may need a customer's name, but they definitely shouldn't have access to their ssn.*/
+function random(name) {
+
+    console.log(name); 
+     
+    (function() { 
+        var pii = {
+            name: name,
+            ssn: '123-123-4567'
+        }
+    }    
+    )  
+}
+
+random('Greg')
+
+
+// function random(name) { 
+//             return pii = {
+//                   name: name,
+//                   ssn: '123-123-4567'
+//             }
+        
+//         }    
+// console.log(random('greg'))
+
+
