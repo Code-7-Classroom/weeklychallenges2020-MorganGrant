@@ -15,5 +15,5 @@ function cutPizzaSlices ( slices ) {
     console.log(sharePizza(3));
 };
      
-var sharePizza = cutPizzaSlices(8);
+var sharePizza = cutPizzaSlices(8); 
 
