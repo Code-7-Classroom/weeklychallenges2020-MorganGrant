@@ -22,6 +22,8 @@ var Person = function(name, job , age) {
     
 }
 
+
+
 Person.prototype.excercise = function() {
     console.log("Running is fun! - said no one ever")
 }
@@ -31,11 +33,13 @@ Person.prototype.fetchJob = function() {
 }
 
 var Programmer = function ( name, job, age, languages , busy ) {
-    Person.call( this, name , job, age,);
+    Person.call( this, name , job, age);
     this.languages = languages;
-    this.busy = true
+    this.busy = true;
 }
-Programmer.prototype = Object.create(Person.prototype)
+
+Programmer.prototype = new Person();
+
 
 Programmer.prototype.completeTask = function() {
     return this.busy = false
@@ -76,10 +80,12 @@ var greg = new Programmer ('Greg' , 'Rockstar' , 23 , ['html' , 'css' , 'javaScr
 var lila = new Programmer ('Lila' , 'designer' , 44 , [ 'css' , 'Spanish' ] , true )
 var john = new Programmer ('John Snow' , 'Warden of the north ' , 25 , [ 'nothing' , 'wildling' ] , false )
 console.log(greg)
-console.log(greg.acceptNewTask())
-console.log(lila)
-console.log(lila.offerNewTask(true))
-console.log(greg.learnLanguage('English'))
-console.log(greg.listLanguages())
-console.log(john)
-console.log(john.fetchJob())
+console.log(greg.excercise())
+// console.log(lila)
+// console.log(lila.offerNewTask(true))
+// console.log(greg.learnLanguage('English'))
+// console.log(greg.listLanguages())
+// console.log(john)
+// console.log(john.fetchJob())
+// console.log(greg.lastName)
+// console.log(lila.lastName)
