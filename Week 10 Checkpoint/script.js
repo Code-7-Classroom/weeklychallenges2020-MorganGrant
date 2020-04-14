@@ -1,7 +1,7 @@
 const me = {
     name:'Grant Morgan',
 }
-console.log(me.name)
+console.log(me)
 
 me.sayHI = name => {console.log(name)}
 
