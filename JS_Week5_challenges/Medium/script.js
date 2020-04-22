@@ -17,6 +17,7 @@ const findAverage = (theArray, expectation) => {
     // console.log(sum) // check to make sure the for loop calculated correctly 
     let average = sum / theArray.length
     return `Your array average is ${average} and your expectation is ${expectation}`
+    
 }
 
 let input1 = [1, 4, 7];

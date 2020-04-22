@@ -1,0 +1,105 @@
+
+ 
+<html lang="en">
+ 
+<head>
+ 
+ <meta charset="UTF-8">
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+ <title>Dom Manipulation Hard</title>
+ 
+ <style>
+ 
+   * {
+ 
+     margin: 0;
+ 
+     padding: 0;
+ 
+   }
+ 
+   h1 {
+ 
+     color: red;
+ 
+   }
+ 
+   button {
+ 
+     padding: 10px;
+ 
+   }
+ 
+   .bg-red {
+ 
+     background-color: red;
+ 
+   }
+ 
+   .bg-white {
+ 
+     background-color: white;
+ 
+   }
+ 
+ </style>
+ 
+</head>
+ 
+<body>
+ 
+   <button class="red--btn">
+ 
+     Turn it red!
+ 
+   </button>
+ 
+   <button class="white--btn">
+ 
+     Turn it white!
+ 
+   </button>
+ 
+   <script>
+ 
+    // Do Stuff Here
+    /*--HARD: Create two buttons, one that when clicked turns the background of the body red. The other, when clicked, turns the 
+    body's background color white. Each of the background colors should be defined as class styles and when the buttons are pushed the 
+    body's classList is updated to include the correct class for the background. 
+Create a single function that takes an input className and updates the body's classList to ONLY include that className
+--*/
+
+
+ 
+    window.updateTheBackground = function(className) {
+      let bodyChange = document.querySelector("body")
+      bodyChange.classList.remove(`bg-white`) //Remove bg-white which has the highest specificity
+      bodyChange.classList.add(`bg-${className}`)
+
+
+      //Ver. 1 of code need to make it more dry and fix a bug.
+      // if (className === 'red') {
+      //   document.querySelector("body").classList.add("bg-red")
+      // }
+
+      // if (className === 'white') {
+      //   document.querySelector("body").classList.add("bg-white")
+      // }
+    }
+
+    document.querySelector(".red--btn").addEventListener('click', () => {
+      window.updateTheBackground('red') 
+    })
+    document.querySelector(".white--btn").addEventListener('click', () => {
+      window.updateTheBackground('white')
+    })
+ 
+   </script>
+ 
+</body>
+ 
+</html>
