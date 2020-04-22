@@ -6,16 +6,34 @@ Input: “what a wonderful day it has been!”  Output: “o”
 --*/
 
 //First the String into an array by letter
-//Then I need to sort the array by letter
+//Then loop through the arrary comparing each character to the rest
+// every time a character matches the another in the array, count it 
+// the first time you loop throught the array and it doesnt match any other character in the array, break from the array and return that value.
+
 
 let str = `this hat is the greatest!`
 
 const uniqueChar = (text) => {
 
-    let textArray = text.split('').sort()
-    console.log(textArray)
+    let textArray = text.split('');
 
+    for (i = 0; i < textArray.length; i++) {
+
+        let counter = 0
+
+        for (v = 0; v < textArray.length; v++) {
+            
+           if(textArray[i] === textArray[v]) {
+               counter += 1 ;
+           }
+        }
+
+        if (counter < 2) {
+            var  unique = textArray[i]
+            break;
+        }
+    }
+    return unique;
 }
 
 console.log(uniqueChar(str))
-
