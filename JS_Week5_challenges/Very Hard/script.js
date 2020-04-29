@@ -8,10 +8,10 @@ Input: “what a wonderful day it has been!”  Output: “o”
 //First the String into an array by letter
 //Then loop through the arrary comparing each character to the rest
 // every time a character matches the another in the array, count it 
-// the first time you loop throught the array and it doesnt match any other character in the array, break from the array and return that value.
+// the first time you loop through the array and it doesnt match any other character in the array, break from the array and return that value.
 
 
-let str = `this hat is the greatest!`
+let str = `the quick brown fox jumps over the calm kitten quietly`
 
 const uniqueChar = (text) => {
 
@@ -30,7 +30,7 @@ const uniqueChar = (text) => {
 
         if (counter < 2) {
             var  unique = textArray[i]
-            break;
+            break; // the First time the conditon is meet break the loop
         }
     }
     return unique;
